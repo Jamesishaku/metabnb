@@ -68,3 +68,10 @@
   form button:last-child{
     background-color: var(--white-color);
   }
+
+  /* MOBILE RESPONSIVENESS */
+@media screen and (max-width: 600px){
+  .modalContainer {
+    max-width: 300px;
+  }
+}

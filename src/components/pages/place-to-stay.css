@@ -65,19 +65,14 @@
 /* TABLET RESPONSIVENESS */
 @media screen and (max-width: 868px){
     .grid-container{
-        grid-template-columns:  repeat(3, 1fr);
+        grid-template-columns:  repeat(2, 1fr);
     }
 }
 
 /* MOBILE RESPONSIVENESS */
 @media screen and (max-width: 600px){
     .grid-container{
-        grid-template-columns:  repeat(2, 1fr);
-    }
-}
-/* SMALL SCREEN MOBILE RESPONSIVENESS */
-@media screen and (max-width: 400px){
-    .grid-container{
         grid-template-columns:  repeat(1, 1fr);
     }
 }
+
