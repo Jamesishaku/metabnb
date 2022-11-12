@@ -1,4 +1,5 @@
 import React from "react";
+import {Link} from 'react-router-dom'
 import './footer.css'
 import logo from '../assets/light-logo.svg'
 import { ImFacebook, ImTwitter } from 'react-icons/im'
@@ -9,7 +10,7 @@ const Footer = () => {
         <footer>
             <div className="footer_container">
                 <div className="social_media">
-                    <img src={logo} alt="" />
+                    <Link to="/"><img src={logo} alt="" /></Link>
                     
                     <div className="social_handles">
                         <ImFacebook />

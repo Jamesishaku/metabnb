@@ -60,7 +60,7 @@
     .logo{
         display: flex;
         position: absolute;
-        top: 15px;
+        top: 25px;
         left: 35px;
     }
 
@@ -79,7 +79,6 @@
         transition: all 0.5s ease-in-out;
         width: 100%;
         background-color: var(--white-color);
-        
     }
 
   .nav_links{
@@ -97,6 +96,6 @@
         display: block;
         position: absolute;
         right: 35px;
-        top: 15px;
+        top: 25px;
     }
 }

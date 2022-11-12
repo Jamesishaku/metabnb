@@ -3,7 +3,6 @@ import Header from "./Header";
 import Sponsors from "./Sponsors";
 import Adventure from "./Adventure";
 import About from "./About";
-import Footer from "../Footer";
 
 const Home = () => {
     return (
@@ -12,7 +11,6 @@ const Home = () => {
             <Sponsors />
             <Adventure />
             <About />
-            <Footer />
         </>
     )
 }

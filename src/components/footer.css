@@ -1,9 +1,8 @@
 
-
 footer{
     background-color: var(--dark-grey-color);
     color: var(--white-color);
-    padding: var(--lg-section-padding);
+    padding: 3rem var(--lg-section-padding);
 }
 
 footer .footer_container{
@@ -22,6 +21,7 @@ footer .social_media{
 footer .social_media svg{
     margin-right: 30px;
     margin-bottom: 10px;
+    cursor: pointer;
 }
 
 footer .social_media img{
@@ -36,6 +36,11 @@ footer ul li{
     color: var(--white-color);
     list-style: none;
     margin-bottom: 10px;
+    cursor: pointer;
+}
+
+footer ul li:hover{
+    color:var(--purple-color)
 }
 
 footer p{

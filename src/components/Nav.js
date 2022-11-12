@@ -17,7 +17,7 @@ const Nav = () => {
           <nav className="navbar">
 
                 <div className="logo">
-                    <img src={ logo } alt="logo" />
+                    <Link to="/"><img src={ logo } alt="logo" /></Link>
                 </div>
                 <div className={Mobile ? "nav_links_mobile" : "links_container" } onClick={()=> { setMobile(false)}}>
                     <ul className="nav_links">
@@ -25,7 +25,6 @@ const Nav = () => {
                         <Link to="/place-to-stay"><li>Place to stay</li></Link>
                         <Link to="/nfts"><li>NFTs</li></Link>
                         <Link to="/community"><li>Community</li></Link> 
-                        {/* <li className="btn_wallet">Connect wallet</li> */}
                     </ul>
                     <button className="btn_wallet" onClick={() => setOpenModal(true)}>Connect wallet</button>
                 </div>

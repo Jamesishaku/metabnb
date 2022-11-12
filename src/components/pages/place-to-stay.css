@@ -1,10 +1,32 @@
-.adventure{
+
+.stay_section{
     padding: var(--lg-section-padding);
 }
 
-h2{
-    font-size: var(--lg-h2-size);
-    text-align: center;
+.stay_section ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.stay_section ul li{
+    list-style: none;
+    padding: 8px 12px;
+    cursor: pointer;
+}
+
+.stay_section ul li:hover{
+    color: var(--purple-color);
+}
+
+.stay_section ul li:last-child{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid var(--light-grey-color);
+    border-radius: 5px;
+    width: 150px;
 }
 
 .grid-container{
@@ -41,11 +63,6 @@ h2{
 }
 
 @media screen and (max-width: 868px){
-    h2{
-        font-size: var(--md-h2-size);
-        margin-top: 40px;
-    }
-
     .grid-container{
         grid-template-columns:  repeat(3, 1fr);
     }
@@ -61,9 +78,4 @@ h2{
     .grid-container{
         grid-template-columns:  repeat(1, 1fr);
     }
-
-    .grid-item{
-        padding: 10px;
-    }
 }
-
