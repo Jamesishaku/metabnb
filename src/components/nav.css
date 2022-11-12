@@ -62,6 +62,7 @@
     display: none;
 }
 
+/* TABLET SCREEN RESPONSIVENESS */
 @media screen and (max-width: 868px){
 
     .logo{

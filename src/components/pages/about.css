@@ -1,4 +1,4 @@
-
+/* DESKTOP VIEW */
 .about{
     background-color: var(--purple-color);
     padding: var(--lg-section-padding);
@@ -44,7 +44,7 @@
     width: 100%;
 }
 
-
+/* TABLET SCREEN RESPONSIVENESS */
 @media screen and (max-width: 868px){
 
     .about p{
@@ -57,6 +57,7 @@
     }
 }
 
+/* MOBILE SCREEN RESPONSIVENESS */
 @media screen and (max-width: 600px){
     .about{
         flex-direction: column;

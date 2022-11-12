@@ -1,3 +1,4 @@
+/* DESKTOP VIEW */
 .hero{
     display: flex;
     justify-content: space-between;
@@ -54,6 +55,7 @@
     width: 100%;
 }
 
+/* TABLET SCREEN RESPONSIVENESS */
 @media screen and (max-width: 868px){
     .hero{
         align-items: center;
@@ -77,6 +79,7 @@
     }
 }
 
+/* MOBILE RESPONSIVENESS */
 @media screen and (max-width: 600px){
     .hero{
         flex-direction: column;

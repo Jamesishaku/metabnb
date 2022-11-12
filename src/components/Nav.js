@@ -8,18 +8,20 @@ import Modal from "./pages/Modal";
 
 
 const Nav = () => {
-
+    // Small screen menu state 
     const [Mobile, setMobile] = useState(false)
+    // Modal control
     const [openModal, setOpenModal] = useState(false);
 
     return (
         <>
-          <nav className="navbar">
-
+            <nav className="navbar">
+                {/* logo  */}
                 <div className="logo">
                     <Link to="/"><img src={ logo } alt="logo" /></Link>
                 </div>
-                <div className={Mobile ? "nav_links_mobile" : "links_container" } onClick={()=> { setMobile(false)}}>
+                <div className={Mobile ? "nav_links_mobile" : "links_container"} onClick={() => { setMobile(false) }}>
+                    {/* links  */}
                     <ul className="nav_links">
                         <Link to="/"><li>Home</li></Link>
                         <Link to="/place-to-stay"><li>Place to stay</li></Link>
@@ -28,10 +30,12 @@ const Nav = () => {
                     </ul>
                     <button className="btn_wallet" onClick={() => setOpenModal(true)}>Connect wallet</button>
                 </div>
+                {/* Mobile Nav Menu */}
                 <button className="mobile_menu_icon" onClick={() => setMobile(!Mobile)}>
                     {Mobile ? <ImCross /> : <FaBars /> }
                 </button>
-        </nav>
+            </nav>
+            {/* Model Window */}
             <Modal open={openModal}  onClose={() => setOpenModal(false)} />
         </>
     )

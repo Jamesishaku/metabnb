@@ -10,16 +10,18 @@ const Modal = ({ open, onClose }) => {
   return (
       <div className='overlay' onClick={onClose}>
           <div className='modalContainer' onClick={(e) => {
-             e.stopPropagation();
+            //   avoid further propagating the onclick event 
+                e.stopPropagation();
             }}>
               <div className="modalHeader">
-              <h3>Connect wallet</h3>
-              <p className='closeBtn' onClick={onClose}><AiOutlineClose /></p>
+                  <h3>Connect wallet</h3>
+                  {/* close button icon  */}
+                  <p className='closeBtn' onClick={onClose}><AiOutlineClose /></p>
               </div>
               <form>
                   <label>Choose your preferred wallet:</label>
                   <button><span><img src={ dog } alt="dog"/>Metamask</span> <FiChevronRight /></button>
-                    <button><span><img src={ hot } alt="hot"/>WalletConnect</span><FiChevronRight /></button>
+                  <button><span><img src={ hot } alt="hot"/>WalletConnect</span><FiChevronRight /></button>
               </form>
           </div>
     </div>

@@ -10,8 +10,9 @@ const Footer = () => {
         <footer>
             <div className="footer_container">
                 <div className="social_media">
+                    {/* white logo  */}
                     <Link to="/"><img src={logo} alt="" /></Link>
-                    
+                    {/* social media  */}
                     <div className="social_handles">
                         <ImFacebook />
                         <BsInstagram />
@@ -46,6 +47,7 @@ const Footer = () => {
                     </ul>
                 </div>
             </div>
+            {/* copyright  */}
            <p> &copy; 2022 Metabnb</p>
         </footer>
     )

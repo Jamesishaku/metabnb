@@ -47,6 +47,7 @@ footer p{
     padding-top: 20px;
 }
 
+/* MOBILE RESPONSIVENESS */
 @media screen and (max-width: 500px){
     footer .footer_container{
         flex-direction: column;
