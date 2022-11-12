@@ -1,0 +1,19 @@
+
+.sponsors{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: var(--purple-color);
+    padding: 10px 0;
+}
+
+.sponsors img{
+    width: 150px;
+}
+
+@media screen and (max-width: 600px){
+
+    .sponsors img{
+        width: 100px;
+    }
+}

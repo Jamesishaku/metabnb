@@ -1,0 +1,65 @@
+.adventure{
+    padding: var(--lg-section-padding);
+}
+
+h2{
+    font-size: var(--lg-h2-size);
+    text-align: center;
+}
+
+.grid-container{
+    display: grid;
+    grid-template-columns:  repeat(4, 1fr);
+    grid-auto-rows: minmax(100px, auto);
+    gap: 25px;
+    margin: 50px 0;
+}
+
+.grid-item{
+    border: 1px solid var(--light-grey-color);
+    padding: 15px;
+    border-radius: 20px;
+}
+
+.grid-item img{
+    width: 100%;
+}
+
+.grid-item p{
+    font-size: 12px;
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+}
+
+.rating img{
+    width: 90px;
+}
+
+.first-row-text b, .text_right{
+    text-align: right;
+}
+
+@media screen and (max-width: 868px){
+    h2{
+        font-size: var(--md-h2-size);
+        margin-top: 40px;
+    }
+
+    .grid-container{
+        grid-template-columns:  repeat(3, 1fr);
+    }
+}
+
+@media screen and (max-width: 600px){
+    .grid-container{
+        grid-template-columns:  repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 400px){
+    .grid-container{
+        grid-template-columns:  repeat(1, 1fr);
+    }
+}
+
