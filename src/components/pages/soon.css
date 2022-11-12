@@ -1,0 +1,13 @@
+
+.soon{
+    padding: var(--lg-section-padding);
+    text-align: center;
+}
+
+.soon img{
+    width: 80%;
+}
+
+.soon span{
+    color: var(--purple-color);
+}

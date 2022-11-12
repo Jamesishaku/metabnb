@@ -4,6 +4,7 @@ import Nav from './components/Nav'
 import Footer from './components/Footer';
 import Home from './components/pages/Home'
 import PlaceToStay from './components/pages/PlaceToStay'
+import Soon from './components/pages/Soon';
 
 function App() {
   return (
@@ -12,8 +13,8 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} exact />
         <Route path="/place-to-stay" element={<PlaceToStay />} />
-        <Route path="/nfts" element={<Home />} />
-        <Route path="/community" element={<Home />} />
+        <Route path="/nfts" element={<Soon />} />
+        <Route path="/community" element={<Soon />} />
       </Routes>
       <Footer />
     </>
