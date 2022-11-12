@@ -1,6 +1,6 @@
 import React from 'react';
 import hero from "../../assets/hero-image.svg";
-import "./home.css";
+import "./header.css";
 
 function Header() {
   return (

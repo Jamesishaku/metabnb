@@ -25,6 +25,13 @@
     text-decoration: none;
 }
 
+.about a:hover{
+    background-color: transparent;
+    border: 1px solid var(--white-color);
+    color: var(--white-color);
+    transition: all .5s ease-in-out;
+}
+
 .about .text_container{
     width: 40%;
 }
@@ -36,8 +43,6 @@
 .about .img_container img{
     width: 100%;
 }
-
-
 
 
 @media screen and (max-width: 868px){

@@ -47,6 +47,13 @@
     cursor: pointer;
 }
 
+.btn_wallet:hover{
+    background-color: transparent;
+    border: 1px solid var(--purple-color);
+    color: var(--purple-color);
+    transition: all 0.5s ease-in-out;
+}
+
 .nav_links{
     display: flex;
 }
